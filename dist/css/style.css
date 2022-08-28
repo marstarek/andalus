@@ -1,29 +1,36 @@
 :root {
   --main-color:#2397D4;
   --prim-color:#2A9E99;
-  --black-color: #000000;
+  --black-color: #24292F;
   --light-color: #ffffff;
-  --gray-color: #A19F9E;
+  --grid1-color: #fcfeff;
+  --grid2-color: #efdcec;
+  --grid3-color: #e2f2fa;
   --main2-color: #1572A1;
-  --yellow-color: #ECC500;
+  --btn-color: #24292f;
   --second-color: #0E7E78;
   --font-color: #424242;
   --bg-color: #fff;
   --heading-color: #292922;
+  --bg-color: #ffffff;
 }
 
 .dark-mode {
   --main-color:#2c2d2e;
   --prim-color:#2A9E99;
   --black-color: #ffffff;
-  --light-color: #000000;
-  --gray-color: #A19F9E;
+  --light-color: #24292F;
+  --grid1-color: #202429;
+  --grid2-color:#503f54;
+  --grid3-color:#435560;
+  --btn-color: #ffffff;
   --main2-color: #1572A1;
   --yellow-color: #ECC500;
   --second-color: #0E7E78;
   --font-color: #424242;
   --bg-color: #fff;
   --heading-color: #292922;
+  --bg-color: #1B1F24;
 }
 
 body {
@@ -31,8 +38,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Tajawal", sans-serif;
-  background-color: var(--main-color);
-  color: var(--light-color) !important;
+  background-color: var(--bg-color);
+  color: var(--black-color) !important;
   overflow-x: hidden;
   min-height: 100%;
   font-size: 1.25rem;
@@ -56,7 +63,7 @@ nav .nav-item::after {
 }
 nav .nav-item:hover::after {
   width: 100%;
-  background-image: linear-gradient(to right, #2092cf, #6ce7e1);
+  background: -webkit-linear-gradient(300deg, #93f5ec 20%, #a77bf3 70%);
 }
 
 .theme_icon:hover {
@@ -127,7 +134,7 @@ dfn {
 
 mark {
   background: #ff0;
-  color: #000;
+  color: var(--black-color);
 }
 
 small {
@@ -2322,7 +2329,7 @@ textarea.w-select {
 
 h1 {
   margin: 0 0 16px;
-  color: #000;
+  color: var(--black-color) !important;
   font-size: 5rem;
   line-height: 110%;
   font-weight: 500;
@@ -2332,7 +2339,7 @@ h1 {
 h2 {
   margin-top: 0;
   margin-bottom: 16px;
-  color: #050505;
+  color: var(--black-color);
   font-size: 4rem;
   line-height: 110%;
   font-weight: 500;
@@ -2342,7 +2349,7 @@ h2 {
 h3 {
   margin-top: 0;
   margin-bottom: 16px;
-  color: #2b2b2b;
+  color: var(--black-color);
   font-size: 1.375rem;
   line-height: 120%;
   font-weight: 500;
@@ -2382,7 +2389,7 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 16px;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--black-color);
   font-size: 1.25rem;
   line-height: 150%;
   font-weight: 400;
@@ -2390,7 +2397,7 @@ p {
 
 a {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--black-color);
   text-decoration: none;
 }
 
@@ -2552,7 +2559,7 @@ blockquote {
 .paragraph-small {
   padding-top: 15px;
   padding-bottom: 0;
-  color: #000;
+  color: var(--black-color);
   font-size: 15px;
   line-height: 1.5em;
   font-weight: 400;
@@ -2672,7 +2679,7 @@ blockquote {
   padding-top: 10px;
   padding-bottom: 10px;
   transition: opacity 0.2s ease-in-out;
-  color: #000;
+  color: var(--black-color);
   font-size: 15px;
   font-weight: 400;
   text-decoration: none;
@@ -2802,7 +2809,7 @@ blockquote {
 
 .pricing-card.blue {
   border-color: #245fff;
-  color: #000;
+  color: var(--black-color);
 }
 
 .pricing-card.dark-blue {
@@ -2812,7 +2819,7 @@ blockquote {
 .no-margin {
   margin-top: 0;
   margin-bottom: 0;
-  color: #000;
+  color: var(--black-color);
 }
 
 .regular {
@@ -2827,7 +2834,7 @@ blockquote {
 }
 
 .tick-list {
-  color: #000;
+  color: var(--black-color);
 }
 
 .tick-list li {
@@ -2836,13 +2843,13 @@ blockquote {
   background-position: 0 6px;
   background-size: 16px;
   background-repeat: no-repeat;
-  color: #000;
+  color: var(--black-color);
 }
 
 .tick-list ul {
   margin-bottom: 0;
   padding-left: 0;
-  color: #000;
+  color: var(--black-color);
   list-style-type: none;
 }
 
@@ -3210,7 +3217,7 @@ blockquote {
 }
 
 .paragraph-2 {
-  color: #000;
+  color: var(--black-color);
 }
 
 .blog-card-2 {
@@ -3241,7 +3248,7 @@ blockquote {
 
 .heading,
 .paragraph-4 {
-  color: #000;
+  color: var(--black-color);
 }
 
 .content-paragraph {
@@ -3317,7 +3324,7 @@ blockquote {
 
 .large-title {
   overflow: visible;
-  color: #282828;
+  color: var(--black-color);
   font-size: 60px;
   line-height: 75px;
   font-weight: 700;
@@ -3476,7 +3483,7 @@ blockquote {
 }
 
 .typer {
-  color: #000;
+  color: var(--black-color);
   font-weight: 500;
 }
 
@@ -3574,7 +3581,7 @@ blockquote {
 
 .spam.mobile.footer-link-3.footer-link-3-all.y--1 {
   transition-property: none;
-  color: #000;
+  color: var(--black-color);
 }
 
 .social-link-2 {
@@ -3667,7 +3674,7 @@ blockquote {
   align-items: flex-start;
   border-radius: 10px;
   transition: background-color 0.4s, color 0.4s;
-  color: #000;
+  color: var(--black-color);
   text-decoration: none;
 }
 
@@ -3700,13 +3707,13 @@ blockquote {
 
 .rich-text-block-3.block-padding.laptop-area {
   margin-top: 0;
-  color: #282828;
+  color: var(--black-color);
   text-align: left;
   white-space: break-spaces;
 }
 
 .rich-text-block-3.block-padding.laptop-area p {
-  color: #282828;
+  color: var(--black-color);
 }
 
 .section-11 {
@@ -3827,7 +3834,7 @@ blockquote {
 }
 
 .navbar2_dropdown-link.w--current {
-  color: #000;
+  color: var(--black-color);
 }
 
 .navbar2_dropdown-list.w--open {
@@ -3895,7 +3902,7 @@ blockquote {
 }
 
 .navbar2_link.w--current {
-  color: #000;
+  color: var(--black-color);
 }
 
 .navbar2_menu {
@@ -4455,10 +4462,10 @@ blockquote {
 .cta-btn {
   padding: 6px 15px;
   border-radius: 100px;
-  background-color: #000;
+  background-color: var(--btn-color);
   opacity: 1;
   transition: 350ms;
-  color: #fff;
+  color: var(--light-color);
   font-size: 1rem;
   line-height: 150%;
   font-weight: 500;
@@ -4474,7 +4481,7 @@ blockquote {
 .cta-btn.ghost-button {
   background-color: transparent;
   background-image: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--black-color);
 }
 
 .cta-btn.ghost-button:hover {
@@ -4506,7 +4513,7 @@ blockquote {
 }
 
 .cta-btn.is--nav {
-  background-image: linear-gradient(90deg, #b8eaf7, #3ec6e0), url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
+  background: -webkit-linear-gradient(300deg, #93f5ec 20%, #a77bf3 70%);
   background-position: 0 0, 0 0;
   background-size: auto, auto;
   color: #fff;
@@ -4670,7 +4677,7 @@ blockquote {
 .colorbox.blackcolor {
   margin-left: 0;
   background-color: #000;
-  color: #000;
+  color: var(--black-color);
 }
 
 .colorbox.brand2ndcolor {
@@ -4731,7 +4738,7 @@ blockquote {
 }
 
 .case-study-rich-text p {
-  color: #292929;
+  color: var(--black-color);
   font-size: 1.2rem;
   line-height: 170%;
 }
@@ -4851,15 +4858,15 @@ blockquote {
   margin-right: 58px;
   padding: 0;
   transition: 0.2s;
-  color: rgba(0, 0, 0, 0.66);
-  font-size: 1rem;
+  color: var(--black-color) !important;
+  font-size: 1.05rem;
   font-weight: 500;
   letter-spacing: -0.5px;
 }
 
 .nav-text.w--current,
 .nav-text:hover {
-  color: #000;
+  color: var(--black-color);
 }
 
 .nav-text.shorter {
@@ -4963,7 +4970,7 @@ blockquote {
 }
 
 .dropdown-toggle-3:hover {
-  color: #000;
+  color: var(--black-color);
 }
 
 .k-hero-section {
@@ -4989,7 +4996,7 @@ blockquote {
 .h-hero-paragraph {
   max-width: 378px;
   margin-top: 0;
-  color: #342929;
+  color: var(--black-color) !important;
 }
 
 .white-arrow {
@@ -5215,7 +5222,7 @@ blockquote {
 
 .exc-div {
   margin-top: 40px;
-  color: #000;
+  color: var(--black-color);
   font-weight: 500;
 }
 
@@ -5287,11 +5294,11 @@ blockquote {
   margin-bottom: 24px;
   justify-content: flex-start;
   align-items: center;
+  gap: 5px;
 }
 
 .checkbox-text {
   margin-bottom: 0;
-  margin-left: 16px;
 }
 
 .why-talent-img {
@@ -5309,7 +5316,7 @@ blockquote {
   right: 0;
   bottom: auto;
   height: 100px;
-  background-image: linear-gradient(180deg, #fcfeff, #efdcec);
+  background-image: linear-gradient(180deg, var(--grid1-color), var(--grid2-color));
 }
 
 .testimonial-colorful_gradient.bottom {
@@ -5317,7 +5324,7 @@ blockquote {
   top: auto;
   right: 0;
   bottom: -94px;
-  background-image: linear-gradient(180deg, #e2f2fa, rgba(239, 220, 236, 0));
+  background-image: linear-gradient(180deg, var(--grid2-color), rgba(239, 220, 236, 0));
 }
 
 .grid-2 {
@@ -5339,7 +5346,7 @@ blockquote {
   flex-direction: column;
   align-items: flex-start;
   border-radius: 30px;
-  background-color: #fff;
+  background-color: var(--light-color);
   box-shadow: 0 16px 35px 0 rgba(168, 214, 239, 0.35);
 }
 
@@ -5368,13 +5375,14 @@ blockquote {
 }
 
 .black-p {
-  color: #000;
+  color: var(--black-color);
 }
 
 .person-wrap {
   display: flex;
   margin-top: auto;
   align-items: center;
+  gap: 10px;
 }
 
 .person-wrap.is--16px-m-t {
@@ -5382,7 +5390,6 @@ blockquote {
 }
 
 .person-img {
-  margin-right: 24px;
   border-radius: 100%;
 }
 
@@ -5441,16 +5448,16 @@ blockquote {
 }
 
 .footer-name.is--bold {
-  color: #000;
+  color: var(--black-color);
   font-size: 1.2rem;
 }
 
 .email-text {
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--black-color);
 }
 
 .email-text:hover {
-  color: #000;
+  color: var(--black-color);
 }
 
 .social-media_row {
@@ -5462,10 +5469,10 @@ blockquote {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+  gap: 5px;
 }
 
 .social-media_img {
-  margin-left: 8px;
   transition: 0.2s;
 }
 
@@ -5483,16 +5490,16 @@ blockquote {
 }
 
 .k-footer-link:hover {
-  color: #000;
+  color: var(--black-color);
 }
 
 .k-footer-link.first {
   margin-top: 16px;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--black-color);
 }
 
 .k-footer-link.first:hover {
-  color: #000;
+  color: var(--black-color);
 }
 
 .copyright-text {
@@ -5541,15 +5548,15 @@ blockquote {
 }
 
 .email-field:-ms-input-placeholder {
-  color: #000;
+  color: var(--black-color);
 }
 
 .email-field::-moz-placeholder {
-  color: #000;
+  color: var(--black-color);
 }
 
 .email-field::placeholder {
-  color: #000;
+  color: var(--black-color);
 }
 
 .submit-button-3 {
@@ -5563,7 +5570,7 @@ blockquote {
   border-bottom-right-radius: 100px;
   background-color: #000;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .email-div_holder {
@@ -5581,7 +5588,7 @@ blockquote {
 
 .cancel {
   margin-top: 10px;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--black-color);
   font-size: 0.9rem;
 }
 
@@ -5598,7 +5605,7 @@ blockquote {
 }
 
 .text-span {
-  color: #3d3d3d;
+  color: var(--black-color);
 }
 
 .relative {
@@ -5782,7 +5789,7 @@ blockquote {
 }
 
 .step-heading.margin-xs {
-  color: #000;
+  color: var(--black-color);
 }
 
 .step-1-info-wrapper {
@@ -6068,7 +6075,7 @@ blockquote {
 }
 
 .label {
-  color: #000;
+  color: var(--black-color);
 }
 
 .hair-beard {
@@ -6313,7 +6320,7 @@ blockquote {
   border-radius: 6px;
   box-shadow: 0 1px 2px 0 rgba(220, 220, 230, 0.5);
   transition: border-color 0.2s, box-shadow 0.2s;
-  color: #000;
+  color: var(--black-color);
   font-size: 15px;
   font-weight: 300;
 }
@@ -6378,7 +6385,7 @@ blockquote {
 }
 
 .link-2 {
-  color: #000;
+  color: var(--black-color);
   font-size: 1rem;
   font-weight: 400;
 }
@@ -6584,7 +6591,7 @@ blockquote {
 .years-of-xp {
   margin-top: 0;
   margin-bottom: 0;
-  color: #000;
+  color: var(--black-color);
 }
 
 .pro-bio {
@@ -6769,7 +6776,7 @@ blockquote {
 }
 
 .rt-technical_description p {
-  color: rgba(0, 0, 0, 0.65);
+  color: var(--black-color);
 }
 
 .rt-technical_description h4 {
@@ -7153,7 +7160,7 @@ blockquote {
 }
 
 .text-span-2 {
-  color: #000;
+  color: var(--black-color);
 }
 
 .why-image_div {
@@ -7253,7 +7260,7 @@ blockquote {
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 24px;
   transition: 0.3s;
-  color: #000;
+  color: var(--black-color);
 }
 
 .color-tile:hover {
@@ -7690,12 +7697,12 @@ blockquote {
 }
 
 .emial-capture.smaller {
-  color: #000;
+  color: var(--black-color);
   font-size: 1.1rem;
 }
 
 .emial-capture.is--bold {
-  color: #000;
+  color: var(--black-color);
   font-size: 1.2rem;
 }
 
@@ -7894,7 +7901,7 @@ blockquote {
     border-width: 0;
     border-color: #fff;
     background-color: #fff;
-    color: #000;
+    color: var(--black-color);
   }
   .toggle {
     display: flex;
@@ -8745,7 +8752,7 @@ blockquote {
   .sign-in-button.web.for-mobile-button.landscape-button {
     margin-left: -13px;
     background-color: #fff;
-    color: #000;
+    color: var(--black-color);
   }
   .dropdown-list-2 {
     padding-top: 0;
@@ -9268,7 +9275,7 @@ blockquote {
   .sign-in-button.web.for-mobile-button.landscape-button {
     margin-left: 0;
     background-color: #fff;
-    color: #000;
+    color: var(--black-color);
   }
   .nav-link-2.pricing-nav.pricingg {
     padding-left: 20px;
