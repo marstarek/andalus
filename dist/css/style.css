@@ -4848,6 +4848,7 @@ blockquote {
   -webkit-backdrop-filter: blur(9px);
   backdrop-filter: blur(9px);
   mix-blend-mode: normal;
+  z-index: 11000;
 }
 
 .nav-flex_wrap {
@@ -8266,7 +8267,6 @@ blockquote {
   }
   .cta-btn.is--colorful.mob,
 .cta-btn.is--nav.mob {
-    display: none;
   }
   .mycontain.hero {
     flex-direction: column;
@@ -8552,7 +8552,6 @@ blockquote {
     flex-direction: column;
   }
   .pc-cta_wrapper {
-    display: none;
   }
   .info-wrapp {
     padding: 14px;
@@ -9721,7 +9720,6 @@ blockquote {
     line-height: 110%;
   }
   .pc-cta_wrapper {
-    display: none;
   }
   .collection-list {
     -ms-grid-columns: 1fr;
